@@ -1,0 +1,434 @@
+/* Styling common for webpage*/
+.hover-pink:hover {
+  background-color: #b3005e;
+  border-radius: 10px;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color: black;
+}
+
+/* Styling for images */
+.bg-img {
+  margin-left: 300px;
+  margin-top: 150px;
+}
+
+/* Styling for Navbar */
+.name {
+  font-size: 18px;
+  color: white;
+  padding: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.left_navbar {
+  display: flex;
+  justify-content: end;
+}
+
+.nav-item {
+  padding-left: 3px;
+  padding-right: 3px;
+  border-left: 3px;
+  border-right: 3px;
+}
+
+.nav-item:hover {
+  background-color: #b3005e;
+  border-radius: 10px;
+}
+
+/* Styling for first container */
+.first-container {
+  padding-top: 70px;
+  /* width:100vw;
+    height:100vh; */
+  align-items: center;
+}
+
+.first-container img {
+  display: block;
+  width: 90%;
+  height: 100%;
+  margin: auto 20%;
+  /* text-align: start; */
+}
+
+.intro {
+  /* position: absolute; */
+  /* top: 40%;
+    left: 60%; */
+  text-align: center;
+  margin: 23% auto;
+  font-family: "Times New Roman", Times, serif;
+  /* font-size: 60px; */
+  color: aliceblue;
+}
+
+.intro h2 {
+  font-size: 40px;
+}
+
+.intro h1 {
+  font-size: 50px;
+}
+
+.first-container .intro span {
+  color: #b3005e;
+}
+
+/* Media content for smaller devices for first container */
+@media screen and (max-width: 900px) {
+  .intro h2 {
+    font-size: 23px;
+  }
+
+  .intro h1 {
+    font-size: 34px;
+  }
+
+  .first-container img {
+    display: none;
+  }
+}
+
+/* Styling for about container */
+.about-Container {
+  padding-top: 150px;
+  /* position:absolute; */
+  /* width:100vw;
+    height:100vh; */
+  /* background-color: #F5E8E4; */
+  color: aliceblue;
+}
+
+.about-Container .heading {
+  padding-top: 30px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.about-info {
+  display: flex;
+  /* padding-left: 10%; */
+}
+
+.about-Container .about-info h3 {
+  padding-top: 50px;
+}
+
+.about-Container .about-info span {
+  color: #b3005e;
+}
+
+.column-info {
+  display: flex;
+  flex-direction: column;
+  /* padding-left: 8%; */
+}
+
+.about-Container .about-info .column-info p {
+  width: 80%;
+  font-size: 100%;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.about-Container .about-info .column-info button {
+  max-width: fit-content;
+}
+
+.my-photo {
+  display: block;
+  width: 70%;
+  height: 90%;
+  padding-top: 20px;
+  padding-left: 20%;
+}
+
+/* Media content for smaller devices for about container */
+@media screen and (max-width: 900px) {
+  .about-Container {
+    padding-top: 0px;
+  }
+  .column-info {
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+  }
+  .about-Container .heading {
+    font-size: 35px;
+  }
+  .my-photo {
+    /* padding-left: 40px; */
+    align-items: center;
+  }
+  .about-info {
+    align-items: center;
+  }
+}
+
+/* styling for education container */
+.education-container {
+  padding-top: 80px;
+  /* height: 100vh;
+    width: 100vw; */
+  /* background-color: #E8E2E2; */
+  color: white;
+}
+
+.education-container h3 {
+  display: inline;
+  font-size: 38px;
+  font-family: "Times New Roman", Times, serif;
+  padding-left: 50px;
+  color: aliceblue;
+}
+.education-container img {
+  display: block;
+  width: 20%;
+  height: 50%;
+}
+
+.masters {
+  /* background-color: #c7bea2; */
+  /* background-image: url("images/edu_img.jpeg");
+  background-repeat: no-repeat; */
+  border: #7b8fa1;
+  border-style: solid;
+  border-width: 5px;
+  font-family: "Times New Roman", Times, serif;
+  padding: 2%;
+  margin: 2% 10%;
+}
+
+.masters:hover {
+  background-color: #7b8fa1;
+}
+
+.education-container .masters h4 {
+  display: inline-block;
+  padding-right: 20%;
+}
+
+/* Media content for smaller devices for education container */
+@media screen and (max-width: 900px) {
+  .education-container h3 {
+    display: inline;
+    font-size: 35px;
+    font-family: "Times New Roman", Times, serif;
+    padding-left: 0px;
+    color: aliceblue;
+  }
+  .education-container h2 {
+    font-size: 25px;
+  }
+  .masters {
+    margin: 2% 1%;
+  }
+}
+
+/* styling for project container */
+.project-container {
+  padding-top: 100px;
+  /* height: 100vh;
+    width: 100vw; */
+  /* background-color: #E8E2E2; */
+  color: aliceblue;
+}
+
+.project-container h2 {
+  font-size: 38px;
+  font-family: "Times New Roman", Times, serif;
+  color: aliceblue;
+}
+
+.carousel-items-css {
+  height: 70vh;
+  background-color: #7b8fa1;
+}
+.carousel-items-css .carousel-text {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-top: 7%;
+  text-align: center;
+}
+
+.carousel-items-css .carousel-text p {
+  padding-top: 5%;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.carousel-items-css .carousel-text h3 {
+  font-style: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Media content for smaller devices for project container */
+@media screen and (max-width: 900px) {
+  .project-container h2 {
+    font-size: 35px;
+    font-family: "Times New Roman", Times, serif;
+    color: aliceblue;
+  }
+  .carousel-items-css .carousel-text p {
+    padding-top: 5%;
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+  }
+}
+
+/* styling for publications container */
+
+.publications-container {
+  padding-top: 80px;
+  /* height: 100vh;
+  width: 100vw; */
+  /* background-color: #E8E2E2; */
+  /* color: white; */
+}
+
+.publications-container h1 {
+  color: aliceblue;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 35px;
+  padding-left: 20px;
+}
+
+.publications-container .card {
+  background-color: #7b8fa1;
+  width: 90vw;
+  margin: 3% auto;
+  padding: 1%;
+}
+
+.publications-container .publications-heading {
+  color: aliceblue;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.publications-container .experience-heading {
+  color: aliceblue;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Media content for smaller devices for publications container */
+@media screen and (min-width: 900px) {
+  .publications-container h1 {
+    color: aliceblue;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    padding-left: 20px;
+  }
+}
+
+/* styling for SKills container */
+.skills-container {
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 100px;
+  /* height: 100vh;
+  width: 100vw; */
+  /* background-color: #E8E2E2; */
+  color: aliceblue;
+}
+
+.skills-container .container {
+  text-align: center;
+}
+
+.skills-container img {
+  height: 60%;
+  width: 30%;
+}
+
+.in-middle {
+  padding-top: 20%;
+}
+
+.in-center {
+  padding-left: 10%;
+}
+
+.btn-skills {
+  align-items: center;
+  font-size: 40px;
+  color: aliceblue;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.skills-container .row {
+  padding-top: 40px;
+  border: aliceblue;
+  border-radius: 2px;
+  border-style: solid;
+  margin: 50px;
+}
+
+.list {
+  color: #b3005e;
+  font-size: 23px;
+}
+
+.btn-skills:hover {
+  color: #b3005e;
+}
+
+/* Media content for smaller devices for skills container */
+@media screen and (max-width: 900px) {
+  .skills-container h1 {
+    font-size: 35px;
+  }
+  .btn-skills {
+    align-items: center;
+    font-size: 30px;
+    color: aliceblue;
+    font-family: "Times New Roman", Times, serif;
+  }
+}
+/* styling for contact container */
+.contact-container {
+  font-family: "Times New Roman", Times, serif;
+  padding: 100px 0px;
+
+  /* height: 100vh;
+    width: 100vw; */
+  /* background-color: #E8E2E2; */
+}
+
+.contact-container .info {
+  font-size: 24px;
+}
+
+.contact-container .row {
+  background-color: #7b8fa1;
+  /* height: 80vh; */
+  color: #e8e2e2;
+}
+
+.contact-container .row .mar {
+  margin: 3%;
+}
+
+.contact-container .move-down {
+  padding-top: 3%;
+}
+
+.contact-container .row .form-control {
+  width: 40vw;
+}
+
+/* Media content for smaller devices for skills container */
+@media screen and (max-width: 900px) {
+  .contact-container .row .form-control {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+  }
+}
