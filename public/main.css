@@ -197,16 +197,18 @@ body {
   /* background-color: #c7bea2; */
   /* background-image: url("images/edu_img.jpeg");
   background-repeat: no-repeat; */
-  border: #7b8fa1;
+  border: #f8f4ea;
   border-style: solid;
   border-width: 5px;
+  border-radius: 10px;
   font-family: "Times New Roman", Times, serif;
   padding: 2%;
   margin: 2% 10%;
 }
 
 .masters:hover {
-  background-color: #7b8fa1;
+  background-color: #f8f4ea;
+  color: black;
 }
 
 .education-container .masters h4 {
@@ -220,7 +222,7 @@ body {
     display: inline;
     font-size: 35px;
     font-family: "Times New Roman", Times, serif;
-    padding-left: 0px;
+    padding: 0%;
     color: aliceblue;
   }
   .education-container h2 {
@@ -228,6 +230,9 @@ body {
   }
   .masters {
     margin: 2% 1%;
+  }
+  .education-container {
+    padding: 10% 10%;
   }
 }
 
@@ -248,7 +253,8 @@ body {
 
 .carousel-items-css {
   height: 70vh;
-  background-color: #7b8fa1;
+  background-color: #f8f4ea;
+  color: black;
 }
 .carousel-items-css .carousel-text {
   width: 80vw;
@@ -282,6 +288,10 @@ body {
     font-size: 18px;
     font-family: "Times New Roman", Times, serif;
   }
+
+  .project-container {
+    margin: 0% 4%;
+  }
 }
 
 /* styling for publications container */
@@ -302,7 +312,8 @@ body {
 }
 
 .publications-container .card {
-  background-color: #7b8fa1;
+  background-color: #f8f4ea;
+  color: black;
   width: 90vw;
   margin: 3% auto;
   padding: 1%;

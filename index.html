@@ -17,9 +17,11 @@
   <!-- <img class="bg-img" src="images/background_img.png" alt="" width="800px" > -->
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
         <div class="container">
-            <p class="navbar-brand main-name"></p>
+            <p class="navbar-brand main-name">
+              Sharaschandrika
+            </p>
             
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
           <ul class="nav navbar-nav">
@@ -50,17 +52,10 @@
       </nav>
 
     <!-- <div class="below-navbar"> -->
-
       <div class="first-container" id="Home-Section">
-        <!-- <div class="intro">
-            <h2>Hi, I'm</h2>
-            <h1>Sharaschandrika Nimma</h1>
-            <h2>I'm a <span>Software Developer</span></h2>
-            <button id='contact-me' type="button" class="btn btn-dark hover-pink">Contact Me!</button>
-        </div> -->
         <div class="row">
           <div class="col-lg-6 col-sm-12">
-              <img src='public/images/img1.png' alt="">
+              <img src='https://assets.entrepreneur.com/content/3x2/2000/1593079102-work-731198.jpg' alt="">
               <!-- <i class="fa-solid fa-user"></i> -->
           </div>
           <div class="col-lg-6 col-sm-12">
@@ -68,7 +63,10 @@
               <h2>Hi, I'm</h2>
               <h1>Sharaschandrika Nimma</h1>
               <h2>I'm a <span>Software Developer</span></h2>
-              <button id='contact-me' type="button" class="btn btn-dark hover-pink">Contact Me!</button>
+              <a href="#contact-section">
+                <button id='contact-me' type="button" class="btn btn-dark hover-pink">Contact Me!</button>
+              </a>
+              
             </div>
           </div>
         </div>
@@ -323,98 +321,6 @@
             </div>  
           </div>
         </div>
-       
-       
-       
-
-        <!-- <div class="row">
-          <div class="col">
-            <h5 class="in-middle">Programming Languages:</h5>
-          </div>
-          <div class="col">
-            <img class=" d-block text-center" src="images/python.webp" alt="">
-            <p class="in-center">Python</p>
-          </div>
-          <div class="col">
-            <img class=" d-block text-center"src="images/java-icon.png" alt="">
-            <p class="in-center">Java</p>
-          </div>
-          <div class="col">
-            <img class=" d-block text-center"src="images/c++-icon.png" alt="">
-            <p class="in-center">C++</p>
-          </div>
-          <div class="col">
-            <img class=" d-block text-center"src="images/html-icon.png" alt="">
-            <p class="in-center">HTML5</p>
-          </div>
-          <div class="col">
-            <img class=" d-block text-center"src="images/css-icon.png" alt="">
-            <p class="in-center">CSS</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <h5 class="in-middle">Web Technologies:</h5>
-          </div>
-          <div class="col">
-            <img class=" d-block text-center"src="images/js-icon.png" alt="">
-            <p class="in-center">JavaScript</p>
-          </div>
-          <div class="col">
-            <img class=" d-block text-center"src="images/react-icon.png" alt="">
-            <p class="in-center">React</p>
-          </div>
-          <div class="col">
-            <img class=" d-block text-center"src="images/express-icon.png" alt="">
-            <p class="in-center">Express</p>
-          </div>
-          <div class="col">
-            <img class=" d-block text-center"src="images/node-icon.png" alt="">
-            <p class="in-center">Node</p>
-          </div>
-          <div class="col">
-            <img class=" d-block text-center"src="images/bootstrap-icon.png" alt="">
-            <p class="in-center">Bootstrap</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <h5 class="in-middle">Tools:</h5>
-          </div>
-          <div class="col">
-            <img class=" d-block text-center"src="images/git-icon.png" alt="">
-            <p class="in-center">Git</p>
-          </div>
-          <div class="col">
-            <img class=" d-block text-center"src="images/eclipse-icon.png" alt="">
-            <p class="in-center">Eclipse</p>
-          </div>
-          <div class="col">
-            <img class=" d-block text-center"src="images/vs-icon.png" alt="">
-            <p class="in-center">Visual Studio Code</p>
-          </div>
-          <div class="col">
-            <img class=" d-block text-center"src="images/android-icon.png" alt="">
-            <p class="in-center">Android Studio</p>
-          </div>
-          <div class="col">
-            <img class=" d-block text-center"src="images/pycharm.png" alt="">
-            <p class="in-center">Pycharm</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <h5 class="in-middle">Databases:</h5>
-          </div>
-          <div class="col">
-            <img class=" d-block text-center"src="images/sql-icon.png" alt="">
-            <p class="in-center">SQL</p>
-          </div>
-          <div class="col">
-            <img class=" d-block text-center"src="images/mongo-icon.png" alt="">
-            <p class="in-center">MongoDB</p>
-          </div>
-        </div> -->
       </div>
     </div>
 
@@ -433,7 +339,7 @@
             <p class="info text-center">+1 469-492-3898</p>
           </div>
           <div class="col-lg-8 col-sm-12">
-            <form action="post">
+            <form id="contact-form" action="post">
 
               <input class="d-flex form-control mar" type="text" id="name-field" placeholder="Name" required>
               <input class="d-flex form-control mar" type="email" id="email-field" placeholder="Email" required>
@@ -447,7 +353,7 @@
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="public/script.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
