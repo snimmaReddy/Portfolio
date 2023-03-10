@@ -1,13 +1,22 @@
 /* Styling common for webpage*/
+:root {
+  --purple: #bface2;
+  /* --purple: #ffacac; */
+  --purple2: #97deff;
+  /* --text: #655dbb; */
+  --text: #674188;
+}
+
 .hover-pink:hover {
-  background-color: #b3005e;
+  background-color: var(--purple);
   border-radius: 10px;
+  color: black;
 }
 
 body {
   margin: 0%;
   padding: 0%;
-  background-color: black;
+  background-color: white;
 }
 
 /* Styling for images */
@@ -19,7 +28,7 @@ body {
 /* Styling for Navbar */
 .name {
   font-size: 18px;
-  color: white;
+  color: black;
   padding: 15px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -37,7 +46,14 @@ body {
 }
 
 .nav-item:hover {
-  background-color: #b3005e;
+  background-color: var(--purple);
+  border-radius: 10px;
+}
+
+.hover-pink {
+  border: black;
+  border-style: solid;
+  border-width: 2px;
   border-radius: 10px;
 }
 
@@ -65,7 +81,7 @@ body {
   margin: 23% auto;
   font-family: "Times New Roman", Times, serif;
   /* font-size: 60px; */
-  color: aliceblue;
+  color: black;
 }
 
 .intro h2 {
@@ -77,7 +93,7 @@ body {
 }
 
 .first-container .intro span {
-  color: #b3005e;
+  color: var(--text);
 }
 
 /* Media content for smaller devices for first container */
@@ -102,7 +118,7 @@ body {
   /* width:100vw;
     height:100vh; */
   /* background-color: #F5E8E4; */
-  color: aliceblue;
+  color: black;
 }
 
 .about-Container .heading {
@@ -122,7 +138,7 @@ body {
 }
 
 .about-Container .about-info span {
-  color: #b3005e;
+  color: var(--text);
 }
 
 .column-info {
@@ -177,7 +193,7 @@ body {
   /* height: 100vh;
     width: 100vw; */
   /* background-color: #E8E2E2; */
-  color: white;
+  color: black;
 }
 
 .education-container h3 {
@@ -185,7 +201,7 @@ body {
   font-size: 38px;
   font-family: "Times New Roman", Times, serif;
   padding-left: 50px;
-  color: aliceblue;
+  color: var(--text);
 }
 .education-container img {
   display: block;
@@ -197,9 +213,9 @@ body {
   /* background-color: #c7bea2; */
   /* background-image: url("images/edu_img.jpeg");
   background-repeat: no-repeat; */
-  border: #f8f4ea;
+  border: black;
   border-style: solid;
-  border-width: 5px;
+  border-width: 3px;
   border-radius: 10px;
   font-family: "Times New Roman", Times, serif;
   padding: 2%;
@@ -207,8 +223,10 @@ body {
 }
 
 .masters:hover {
-  background-color: #f8f4ea;
+  /* background-color: var(--purple); */
+  background-image: linear-gradient(to right, var(--purple2), var(--purple));
   color: black;
+  border: none;
 }
 
 .education-container .masters h4 {
@@ -223,7 +241,7 @@ body {
     font-size: 35px;
     font-family: "Times New Roman", Times, serif;
     padding: 0%;
-    color: aliceblue;
+    color: var(--text);
   }
   .education-container h2 {
     font-size: 25px;
@@ -242,18 +260,19 @@ body {
   /* height: 100vh;
     width: 100vw; */
   /* background-color: #E8E2E2; */
-  color: aliceblue;
+  color: black;
 }
 
 .project-container h2 {
   font-size: 38px;
   font-family: "Times New Roman", Times, serif;
-  color: aliceblue;
+  color: var(--text);
 }
 
 .carousel-items-css {
   height: 70vh;
-  background-color: #f8f4ea;
+  /* background-color: var(--purple); */
+  background-image: linear-gradient(to right, var(--purple2), var(--purple));
   color: black;
 }
 .carousel-items-css .carousel-text {
@@ -281,7 +300,7 @@ body {
   .project-container h2 {
     font-size: 35px;
     font-family: "Times New Roman", Times, serif;
-    color: aliceblue;
+    color: var(--text);
   }
   .carousel-items-css .carousel-text p {
     padding-top: 5%;
@@ -298,6 +317,7 @@ body {
 
 .publications-container {
   padding-top: 80px;
+  /* border-radius: 30px; */
   /* height: 100vh;
   width: 100vw; */
   /* background-color: #E8E2E2; */
@@ -305,14 +325,15 @@ body {
 }
 
 .publications-container h1 {
-  color: aliceblue;
+  color: var(--text);
   font-family: "Times New Roman", Times, serif;
   font-size: 35px;
   padding-left: 20px;
 }
 
 .publications-container .card {
-  background-color: #f8f4ea;
+  background-image: linear-gradient(to right, var(--purple2), var(--purple));
+  border-radius: 10px;
   color: black;
   width: 90vw;
   margin: 3% auto;
@@ -320,7 +341,7 @@ body {
 }
 
 .publications-container .publications-heading {
-  color: aliceblue;
+  color: var(--text);
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -330,9 +351,9 @@ body {
 }
 
 /* Media content for smaller devices for publications container */
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 900px) {
   .publications-container h1 {
-    color: aliceblue;
+    color: var(--text);
     font-family: "Times New Roman", Times, serif;
     font-size: 20px;
     padding-left: 20px;
@@ -367,33 +388,51 @@ body {
 }
 
 .btn-skills {
+  margin-top: 20px;
+  width: 80vw;
+  margin: 0% 10%;
+  background-image: linear-gradient(to right, var(--purple2), var(--purple));
+  text-align: center;
   align-items: center;
   font-size: 40px;
-  color: aliceblue;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.btn-content {
+  margin-bottom: 20px;
+  width: 80vw;
+  margin: 0% 10%;
+  background-image: linear-gradient(to right, var(--purple2), var(--purple));
+  text-align: center;
+  align-items: center;
+  font-size: 40px;
+  color: black;
   font-family: "Times New Roman", Times, serif;
 }
 
 .skills-container .row {
-  padding-top: 40px;
+  background-image: linear-gradient(to right, var(--purple2), var(--purple));
+  padding-top: 20px;
   border: aliceblue;
-  border-radius: 2px;
+  border-radius: 10px;
   border-style: solid;
-  margin: 50px;
+  margin: 30px;
 }
 
 .list {
-  color: #b3005e;
+  color: var(--text);
   font-size: 23px;
 }
 
 .btn-skills:hover {
-  color: #b3005e;
+  color: var(--text);
 }
 
 /* Media content for smaller devices for skills container */
 @media screen and (max-width: 900px) {
   .skills-container h1 {
-    font-size: 35px;
+    font-size: 40pxpx;
   }
   .btn-skills {
     align-items: center;
@@ -417,9 +456,9 @@ body {
 }
 
 .contact-container .row {
-  background-color: #7b8fa1;
+  background-image: linear-gradient(to right, var(--purple2), var(--purple));
   /* height: 80vh; */
-  color: #e8e2e2;
+  color: black;
 }
 
 .contact-container .row .mar {
@@ -434,7 +473,7 @@ body {
   width: 40vw;
 }
 
-/* Media content for smaller devices for skills container */
+/* Media content for smaller devices for contact container */
 @media screen and (max-width: 900px) {
   .contact-container .row .form-control {
     width: 80%;
