@@ -8,6 +8,17 @@ const getData = (ev) => {
   document.querySelector("form").reset();
 };
 
+function myFunction() {
+  var x = document.getElementById("nav-dropdown");
+  if (x !== null && x.style.display === "") {
+    console.log(x.style.display);
+    x.style.display = "flex";
+  } else if (x !== null && x.style.display === "flex") {
+    console.log(x.style.display);
+    x.style.display = "";
+  }
+}
+
 const sendEmail = (ev) => {
   ev.preventDefault();
   Email.send({

@@ -6,6 +6,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="public/main.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- <script src="https://kit.fontawesome.com/58ee927c0c.js" crossorigin="anonymous"></script> -->
@@ -15,7 +19,7 @@
 </head>
 <body>
   <!-- <img class="bg-img" src="images/background_img.png" alt="" width="800px" > -->
-    <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+    <!-- <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
         <div class="container">
             <p class="navbar-brand main-name">
               Sharaschandrika
@@ -49,7 +53,34 @@
            
           </ul>
         </div>
-      </nav>
+      </nav> -->
+      <nav>
+      <div class="topnav" id="myTopnav">
+        <div class="nav-left">
+          <a href="#Home-Section" class="active">Sharaschandrika</a>
+        </div>
+        <div class="nav-right">
+          <div id="nav-right-content">
+            <a href="#About-Section">About</a>
+            <a href="#education-section">Education</a>
+            <a href="#project-section">Projects</a>
+            <a href="#publications-Section">Publications</a>
+            <a href="#skills-Section">Skills</a>
+          </div>
+
+           <i class="fa fa-bars icon" onclick="myFunction()"></i>
+           
+          </a>
+        </div>
+      </div>
+      <div class="nav-drop-down" id="nav-dropdown">
+        	<a href="#About-Section">About</a>
+            <a href="#education-section">Education</a>
+            <a href="#project-section">Projects</a>
+            <a href="#publications-Section">Publications</a>
+            <a href="#skills-Section">Skills</a>
+      </div>
+    </nav>
 
     <!-- <div class="below-navbar"> -->
       <div class="first-container" id="Home-Section">
@@ -80,9 +111,21 @@
             </div>
             <div class="col-lg-6 col-sm-12 column-info">
                 <h3>I'm Sharaschandrika Nimma and I'm <span>Software Developer</span> </h3>
-                <p>Geography (from Greek: γεωγραφία, geographia. Combination of Greek words ‘Geo’ (The Earth) and ‘Graphien’ (to describe), literally "earth description") is a field of science devoted to the study of the lands, features, inhabitants, and phenomena of Earth.[1] The first recorded use of the word γεωγραφία was as a title of a book by Greek scholar Eratosthenes (276–194 BC).</p>
-                <p>[1] Geography is an all-encompassing discipline that seeks an understanding of Earth and its human and natural complexities—not merely where objects are, but also how they have changed and come to be. While geography is specific to Earth, many concepts can be applied more broadly to other celestial bodies in the field of planetary science.
-                [2] One such concept, the first law of geography, proposed by Waldo Tobler, is "everything is related to everything else, but near things are more related than distant things."[3][4] Geography has been called "the world discipline" and "the bridge between the human and the physical sciences."</p>
+                <p>I'm a graduate student at UNC Charlotte.I'm  motivated individual with a interest in software development.
+                   My interest in software development started when I was in high school, and I have been pursuing it ever since.
+                   An individual with keen interest in software programming, possessing in depth knowledge of multiple programming languages and development tools,
+                    who wish to work in team of motivated individuals and contribute to the development of the company while concurrently aiding my personal growth. </p>
+                    <p>One of the most valuable experiences during my time at UNC Charlotte was the opportunity to work with professor Qiong Cheng as a Teaching Assistant for Algorithms and Data Structure course. 
+                      This gave me chance to Assist Instructor in managing the evaluation of course assignments along with holding office hours with
+                      students to answer general questions., allowing me to gain a deeper understanding of the Algorithms and Data Structures.</p>
+                  <p>
+                          During my time at UNC Charlotte, I was able to gain a solid foundation in computer science and software engineering, 
+                          including coursework in data structures and algorithms, programming languages, and software development methodologies. 
+                          Additionally, I had the opportunity to work on several projects both individually and as part of a team, which gave me hands-on experience in developing software applications.
+                  </p>
+                  <p>As a software developer, I am constantly learning and staying up-to-date with the latest technologies and industry trends. 
+                    I am proficient in several programming languages, including Java, Python, and C++, and I have experience with various software development tools and frameworks.
+                  Overall, I am excited about the future of software development and the potential for technology to solve complex problems</p>
                 <a href="Resume.pdf" download>
                   <button type="button" class="btn btn-transparent hover-pink">Download Resume</button>
                 </a>
@@ -127,7 +170,7 @@
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button>
+              <!-- <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button> -->
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active carousel-items-css" data-bs-interval="10000">
@@ -135,8 +178,16 @@
                   <div class="carousel-text">
                     <h3>Android Application for Password Management</h3>
                     <p>
-                      This android app aids users in creating secure passwords for their own protection in the web. 
-                      Both people and organizations can store and manage all their passwords in one secure location.
+                      This android app aids users in creating secure passwords for their own protection in the web.
+                       In today's digital world, password management is one of the most underutilized virtual tasks.  
+                       The capabilities for managing passwords are continually being updated by different businesses.
+            	          The purpose with the use of a password manager, both people and organizations can store and manage all their passwords in one secure location. 
+                        Desktop password managers keep your passwords securely stored locally on your device, such as your laptop. 
+                        These credentials are not accessible from any other device. 
+                        So, instead of having and maintaining two different apps in your system, we'll be developing a single app which can perform both activities.
+
+
+Our App enables the user to manage their passwords by generating random passwords and use them or store the password created by the users and secure them.
                     </p>
                   </div> 
               </div>
@@ -145,20 +196,13 @@
                   <div class="carousel-text">
                     <h3>Identification of Fake news using deep learning architecture</h3>
                     <p>
-                      This classifies real news and fake news from the input and hybrid 
-                      neural network architecture is used which combines the capabilities of CNN and LSTM.
-                    </p>
-                  </div> 
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="10000">
-                <div class="carousel-items-css">
-                  <div class="carousel-text">
-                    <h3>Credit Card Fraud Detection</h3>
-                    <p>
-                      This project uses Python and machine learning techniques to identify fraudulent transactions. 
-                      The goal of the project is to develop a straightforward logistic regression model that can identify fraud in credit 
-                      card transactions to reduce risk and financial loss for the company.
+                      Society and individuals are negatively influenced both politically and socially by the widespread increase of fake news either way generated by humans or machines. 
+                       Therefore, automated fake news detection tools have become a crucial requirement.
+                        We used a hybrid Neural Network architecture, that combines the capabilities of CNN and LSTM, is used with two different dimensionality reduction approaches, Principle Component Analysis (PCA) and Chi-Square. 
+                        This work acquired a dataset from the Fake News Challenges (FNC) website which has four types of stances: agree, disagree, discuss, and unrelated. 
+                        The nonlinear features are fed to PCA and chi-square which provides more contextual features for fake news detection. 
+                        The motivation of this research is to determine the relative stance of a news article towards its headline. 
+                        The experimental results show that PCA outperforms than Chi-square and state-of-the-art methods with 97.8% accuracy.
                     </p>
                   </div> 
                 </div>
@@ -168,9 +212,13 @@
                   <div class="carousel-text">
                     <h3>Home Surveillance and motion detection with Raspberry Pi, Open CV, Dropbox</h3>
                     <p>
-                      Raspberry pi module with a camera attached to it is used to capture pictures 
-                      of the house and compare it frame by frame with a background image. 
-                      The program will send an alert to the user via Dropbox if any motion is detected.
+                      This project deals with Home Surveillance and motion detection using raspberry pi, python and capture the picture and send it to the drop box. 
+                      Motion detection is the process of detecting a change in the position of an object relative to its surroundings. 
+                      The intension of this project is to monitor the house and alert the owner if anything appears out of ordinary and saves a backup copy in the Dropbox account.
+                      The proposed Raspberry Pi is connected with a Pi camera and internet connection, the whole device can be configured to carry out the surveillance tasks. 
+                      This project is to prevent loss of privacy and assets. 
+                      This smart surveillance monitoring system store the images of intruders and notify the owners through drop box account that triggered the motion.
+
                     </p>
                   </div> 
                 </div>
@@ -239,88 +287,6 @@
 
     <div class="skills-container" id="skills-Section">
       <h1>Skills:</h1>
-      <!--  <div class="container">
-        
-        <div class="row">
-          <div class="col-lg-6">
-            
-              <button class="btn btn-skills collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
-                Programming languages
-              </button>
-            
-            <div class="collapse " id="collapseExample1" >
-              <div class="list">
-                <p>Python</p>
-                <p>Java</p>
-                <p>C++</p>
-                
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6"> -->
-              <!-- <img src="/images/programming_img.jpeg" alt=""> -->
-            <!-- </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6"> -->
-            <!-- <img src="/images/programming_img.jpeg" alt=""> -->
-          <!-- </div>
-          <div class="col-lg-6">
-
-              <button class="btn btn-skills collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
-                Web development
-              </button>
-           
-            <div class="collapse" id="collapseExample2" >
-              <div class="list">
-                 <p>JavaScript</p>
-                <p>React</p>
-                <p>HTML5</p>
-                <p>CSS</p>
-                <p>Express</p>
-                <p>Node</p>
-                <p>Bootstrap</p>
-              </div>
-            </div>  
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <p>
-              <button class="btn btn-skills collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
-                Database 
-              </button>
-            </p>
-            <div class="collapse" id="collapseExample3" >
-              <div class="list">
-               <p>SQL</p>
-               <p>MongoDB</p>
-              </div>
-            </div>
-            <div class="col-lg-6"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6"> -->
-            <!-- <img src="/images/programming_img.jpeg" alt=""> -->
-          <!-- </div>
-          <div class="col-lg-6">
-              <button class="btn btn-skills collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
-                Tools
-              </button>
-
-            <div class="collapse" id="collapseExample4" >
-              <div class="list">
-                 <p>Android Studio</p>
-                <p>Eclipse</p>
-                <p>Visual Studio Code</p>
-                <p>Git</p>
-                <p>PyCharm</p>
-              </div>
-            </div>  
-          </div>
-        </div>
-      </div> --> 
         <button class="btn btn-skills collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
                 Programming languages
               </button>
@@ -396,6 +362,11 @@
     </div>
     <script src="public/script.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script>
+  function remove_padding() {
+  document.getElementsByClassName("btn-skills").style.margin-bottom="0px";
+}
+</script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
